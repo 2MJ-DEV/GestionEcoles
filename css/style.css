@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+*{
+    font-family: 'Montserrat','Inter','Ubuntu',sans-serif;
+    font-style: normal;
+}
+.alert{
+    height: 30px !important;
+    padding: 3px 3px;
+    font-size: 15px;
+}
+.bg-sign-in{
+    /* background:linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 99.69%); */
+    background: #00C1FE;
+    height:100vh;
+}
+.form-sign-in,.sign-up{
+    border-radius: 10px;
+    width: 380px;
+}
+
+.bg-show{
+    display: block !important;
+    z-index: 0;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+.register{
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1000px;
+    transform: translate(-190px,-260px);
+    transition: 1s ease-out;
+}
+.register-active{
+    margin-top:0;
+    transition: 1s ease-out;
+}
+button[type="submit"]{
+    background-color: #002aff;
+}
+.E-classe {
+    border-left:solid 6px #002aff;
+}
+.bg-sign-in p,.bg-sign-in label{
+    font-size: 14px;
+    line-height:17,07px;
+    font-weight: 400;
+    color:#6C6C6C;
+}
+input[type="email"]::placeholder,input[type="password"]::placeholder{
+    font-size: 12px;
+    line-height: 15px;
+    color: #CDCDCD;
+}
+.sign-in{
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+}
+/* start dashboard */
+/* start sidebar */
+.bg-sidebar{
+    background-color: #c7d0fc;
+    transition: margin 0.6s ease-in-out;
+    z-index: 1;
+}
+.bg-content{
+    background:#e9faff;
+}
+.h7{
+    font-size: 14px;
+}
+/* end sidebar */
+/* start cards */
+.admin-color{
+    color: #002aff ;
+}
+.cards .card__items{
+    border-radius: 8px;
+    width: 220px;
+    height: 150px;
+}
+.card__items--blue{
+    background-color:#002aff;
+}
+.card__items--blue i{
+    color: #ffffff;
+}
+.card__items--rose{
+    background-color:#002aff;
+}
+.card__items--rose i{
+    color:#fff;
+}
+.card__items--yellow{
+    background-color:#002aff;
+}
+.card__items--yellow i{
+    color:#ffffff;
+}
+.card__items--gradient{
+    background: linear-gradient(110.42deg, #002aff 18.27%, #00ffd9 91.84%);
+}
+.card__items--gradient i{
+    color:#FFFFFF;
+}
+.nbr{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+/* end cards */
+/* end dashboard */
+
+
+/* start students list  */
+.student_list{
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+.table th{
+    font-size: 12px;
+    color:#ACACAC;
+}
+table tbody{
+    font-size: 14px;
+}
+.table a{
+    color:#ffffff;
+}
+.student-list-header{
+    border-bottom: 2px solid #E5E5E5;
+}
+.student-list-header i{
+    color:#002aff;
+}
+
+.btn-primary{
+    background-color: #002aff;
+    border-color: #002aff;
+}
+.btn-primary:hover {
+    background-color: #002aff;
+    border-color: #002aff;
+}
+.btn-primary:focus{
+    background-color: none;
+}
+/* end students list */
+.fa-search{
+    left:-30px;
+}
+.bg-sidebar a:hover{
+    background-color: #002aff;
+    border-radius: 5px;
+    width: 130px;
+}
+.valid{
+    color: red;
+}
+@media screen and (min-width:768px){
+    .bg-sidebar{
+        position: sticky !important;
+        top: 0;
+        width: 25% !important;
+    }
+    .hidden-sidebar{
+        margin-left: -25%;
+        
+    }
+}
+@media screen and (max-width:768px){
+    .hidden-sidebar-mobile{
+        margin-left: -50%;
+    }
+    
+}
